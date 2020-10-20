@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Media Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Welcome to this media gallery!</h1>
+    <p></p>
+  </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Upload</a>
+    <a href="#">Info</a>
+    <a href="#" class="right">More</a>
+  </div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/apple.JPG" style="width:100%">
+    <div class="text">An apple a day keeps the doctor away</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/pear.JPG" style="width:100%">
+    <div class="text">Pears are underrated</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/orange.JPG" style="width:100%">
+    <div class="text">Orange you glad I didn't say banana?</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/lemon.JPG" style="width:100%">
+    <div class="text">Life gives everyone lemons</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!-- Grid Layout -->
+    <main class="main-grid">
+      <div class="main-grid-item one">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #1</p>
+          <button data-modal="#09" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="09" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=3" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #1 </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.<p>
+          </div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item two">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #2</p>
+          <button data-modal="#24" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="24" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=18" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #2</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item three">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #3 </p>
+          <button data-modal="#35" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="35" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=33" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #3</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item four">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #4</p>
+          <button data-modal="#44" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="44" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=41" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #4</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item five">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #5</p>
+          <button data-modal="#54" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="54" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=55" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #5</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item six">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #6</p>
+          <button data-modal="#59" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="59" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=60" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #6</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item seven">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #7</p>
+          <button data-modal="#71" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="71" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=72" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #7</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item eight">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #8</p>
+          <button data-modal="#32" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="32" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=75" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #8</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item nine">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #9</p>
+          <button data-modal="#19" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="19" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=77" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #9</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item ten">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #10</p>
+          <button data-modal="#06" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="06" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=100" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #10</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item eleven">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #11</p>
+          <button data-modal="#23" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="23" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=88" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #11</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+      <div class="main-grid-item twelve">
+        <div class="thumb"></div><hr />
+        <div class="card-content">
+          <h4 class="card-title">Image Title</h4>
+          <p class="card-text">Filler text for image #12</p>
+          <button data-modal="#60" class="card-more button">View</button>
+        </div>
+      </div><!--end .main-grid-item -->
+      <div id="60" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="https://picsum.photos/800/450/?image=99" alt="example" />
+  					<div class="eg-text">
+  						<h3>Header #12</h3>
+  						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue felis sit amet dolor dapibus vulputate. Phasellus laoreet eros non justo venenatis, varius interdum felis scelerisque. Donec justo ex, rutrum sed lorem sit amet, tempus dictum ante. In in leo et metus facilisis feugiat quis et leo. Phasellus lacinia velit.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+    </main>
+
+<div class="footer">
+  <h2>&copy; 2020 Kaleb Woolever</h2>
+</div>
+<script src="js/java.js">
+
+</script>
+</body>
+</html>
